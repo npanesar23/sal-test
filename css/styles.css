@@ -1,4 +1,4 @@
-/* Hydro Tek — clone styles */
+/* Sals Power Washing */
 :root {
   --navy: #003366;
   --navy-deep: #002451;
@@ -88,6 +88,22 @@ ul {
   margin-left: auto;
 }
 
+.top-bar__social {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+}
+
+.top-bar__social a {
+  font-weight: 600;
+  color: var(--navy);
+}
+
+.top-bar__social a:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 640px) {
   .top-bar .container {
     flex-direction: column;
@@ -95,6 +111,10 @@ ul {
   }
   .top-bar__sep {
     margin-left: 0;
+  }
+  .top-bar__social {
+    width: 100%;
+    padding-top: 0.25rem;
   }
 }
 
@@ -852,11 +872,89 @@ ul {
   object-position: left center;
 }
 
+.footer-tagline {
+  font-weight: 600;
+  color: #f3f4f6 !important;
+}
+
+.footer-area {
+  font-size: 0.8125rem !important;
+  color: #9ca3af !important;
+}
+
 .footer-brand p {
   margin: 0 0 0.35rem;
   font-size: 0.875rem;
   color: #d1d5db;
   line-height: 1.5;
+}
+
+.footer-brand a {
+  color: #e5e7eb;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-brand a:hover {
+  color: #fff;
+}
+
+.footer-social {
+  margin-top: 0.5rem !important;
+  padding-top: 0.5rem;
+  border-top: 1px solid #374151;
+  font-size: 0.8125rem !important;
+}
+
+.footer-social a {
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
+  color: #fff;
+}
+
+.content-list {
+  margin: 0.5rem 0 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+  color: var(--text);
+  font-size: 0.9375rem;
+}
+
+.content-list li {
+  margin-bottom: 0.35rem;
+}
+
+.faq-block {
+  max-width: 900px;
+}
+
+.faq-block details {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 1rem 0;
+}
+
+.faq-block summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--navy);
+  list-style-position: outside;
+}
+
+.faq-block details[open] summary {
+  margin-bottom: 0.75rem;
+}
+
+.faq-block p {
+  margin: 0 0 0.75rem;
+  font-size: 0.9375rem;
+  color: var(--text);
+}
+
+.faq-block p:last-child {
+  margin-bottom: 0;
 }
 
 .footer-links h4 {
