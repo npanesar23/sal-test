@@ -57,7 +57,7 @@
         if (cg) cg.classList.add("is-invalid");
       }
       if (!valid) return;
-      alert("Thanks — your message has been recorded (demo only).");
+      alert("Thanks. Your message has been recorded (demo only).");
       form.reset();
     });
   }
