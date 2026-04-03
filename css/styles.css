@@ -319,6 +319,15 @@ ul {
 
   .has-dropdown > a {
     cursor: pointer;
+    /* Keep dropdown chevron aligned; mobile header rule forces anchors to block */
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  .has-dropdown > a::after {
+    margin-top: 0;
+    padding: 2px;
   }
 }
 
