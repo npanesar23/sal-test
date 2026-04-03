@@ -939,29 +939,38 @@ ul {
   color: #d1d5db;
 }
 
-.footer-social-chips {
+.site-footer .footer-social-icons {
   display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
   margin-top: 0.5rem;
 }
 
-.contact-chip--footer {
+.footer-social-icon {
+  display: inline-flex;
   align-items: center;
-}
-
-.contact-chip--footer .contact-chip__icon {
+  justify-content: center;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
+  background: var(--navy);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 2px;
+  transition: opacity var(--transition), background var(--transition);
 }
 
-.contact-chip--footer a {
-  color: #e5e7eb;
-  font-weight: 600;
+.footer-social-icon:hover {
+  opacity: 0.92;
+  background: var(--navy-deep);
 }
 
-.contact-chip--footer a:hover {
-  color: #fff;
+.footer-social-icon svg {
+  display: block;
+  width: 20px;
+  height: 20px;
 }
 
 .footer-heading {
@@ -1148,8 +1157,8 @@ ul {
   .footer-tagline {
     max-width: 36rem;
   }
-  .footer-social-chips {
-    align-items: center;
+  .site-footer .footer-social-icons {
+    justify-content: center;
   }
   .footer-col--contact {
     grid-column: 1 / -1;
