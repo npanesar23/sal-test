@@ -462,12 +462,30 @@ ul {
 }
 
 @media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    min-height: 0;
+  }
+
+  .hero .container {
+    width: var(--container);
+    padding: 3.25rem 1.25rem 1.25rem;
+  }
+
+  .hero .container {
+    order: 1;
+  }
+
   .hero-fleet-image {
     position: static;
     transform: none;
     display: block;
-    margin: 2rem auto 0;
-    max-width: min(90vw, 420px);
+    order: 2;
+    margin: 1.75rem auto 0;
+    width: 100%;
+    max-width: min(92vw, 520px);
+    height: auto;
   }
 }
 
