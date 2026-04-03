@@ -745,15 +745,14 @@ ul {
 
 .contact-lead__location {
   margin: 0 0 1.5rem;
-  max-width: 640px;
+  max-width: 100%;
   font-size: 0.9375rem;
   color: var(--text);
   line-height: 1.55;
-}
-
-.contact-lead__location strong {
-  color: var(--navy);
-  font-weight: 700;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
 }
 
 .contact-chip {
