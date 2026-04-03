@@ -434,12 +434,12 @@ ul {
 .hero .container {
   position: relative;
   z-index: 1;
-  padding: 4rem 3rem;
+  padding: 4rem 2.5rem;
 }
 
 /* Home hero: slightly bias content left for better balance */
 .hero.hero--home .container {
-  padding: 4rem 3rem 4rem 2.25rem;
+  padding: 4rem 2.5rem 4rem 1.5rem;
 }
 
 .hero h1 {
@@ -453,7 +453,7 @@ ul {
 /* Home hero inset fleet image */
 .hero-fleet-image {
   position: absolute;
-  right: 1.5rem;
+  right: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
   width: clamp(260px, 34vw, 520px);
