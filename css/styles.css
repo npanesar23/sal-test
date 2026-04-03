@@ -857,6 +857,27 @@ ul {
   text-decoration: underline;
 }
 
+@media (max-width: 900px) {
+  /* Prevent horizontal scrolling on mobile/tablet */
+  .contact-lead__row {
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+
+  .contact-lead__row .contact-chip a {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  .contact-lead__location {
+    white-space: normal;
+    overflow-x: visible;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+}
+
 
 /* Form section */
 .form-section {
